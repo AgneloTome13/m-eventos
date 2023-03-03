@@ -1,0 +1,288 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    min-height: 100vh;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.logo{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+/*---------Menu------------------*/
+header{
+    position: relative;
+	background: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0, .2);
+}
+
+.logo{
+	color: #000;
+	height: 60px;
+	font-size: 36px;
+	line-height: 60px;
+	padding: 0 20px;
+	text-align: center;
+	box-sizing: border-box;
+	float: left;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+nav{
+	float: right;
+}
+
+.clearfix{
+	clear: both;
+}
+
+header nav ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+header nav ul li{
+	list-style: none;
+}
+
+header nav ul li a{
+	display: block;
+	margin: 10px 0;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #262626;
+}
+
+header nav ul li a.active, header nav ul li a:hover{
+	background: #F2A340;
+	color: #fff;
+	transition: 0.5s;
+}
+
+@media(max-width: 991px){
+	.menu-toggle{
+		display: block;
+		width: 40px;
+		height: 40px;
+		margin: 10px;
+		float: right;
+		cursor: pointer;
+		text-align: center;
+		font-size: 30px;
+		color:#262626;
+	}
+
+	.menu-toggle:before{
+		content: '\f0c9';
+		font-family: fontAwesome;
+		line-height: 40px;
+	}
+
+	.menu-toggle.active:before{
+		content: '\f00d';
+	}
+
+	nav{
+		display: none;
+	}
+
+	nav.active{
+		display: block;
+		width: 100%;
+	}
+
+	nav.active ul{
+		display: block;
+	}
+
+	nav.active ul li a{
+		margin: 0;
+	}
+}
+
+/*----------Fim Menu-----------*/
+
+#search-container{
+    background-image: url("../img/banner2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    padding: 50px;
+    text-align: center;
+}
+
+#search-container h1{
+    font-weight: 900;
+    margin-top: 185px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+#search-container input{
+    width: 50%;
+    margin: 0 auto;
+}
+
+footer{
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    padding: 30px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p{
+    margin: 0;
+}
+
+#events-container{
+    padding: 50px;
+}
+
+#events-container h2{
+    margin-bottom: 10px;
+}
+
+#events-container .subtitle{
+    color: #757575;
+    margin-bottom: 30px;
+}
+
+.card .card-date{
+    font-size: 14px;
+    color: #999;
+}
+
+.card .card-title{
+    color: #212121;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-participants{
+    font-size: 16px;
+    color: #555;
+}
+
+.btn-primary{
+    background-color: #F2A340;
+    border: 2px solid #F2A340;
+}
+
+.btn-primary:hover{
+    background-color: #c20808;
+    border-color: #c20808;
+}
+
+#image-container, #info-container{
+    margin-top: 30px;
+}
+
+#image-container img{
+    border-radius: 10px;
+}
+
+#info-container h1{
+    font-size: 32px;
+    font-weight: 900;
+}
+
+#info-container p{
+    margin: 0;
+    font-size: 14px;
+    display: flex;
+}
+
+#info-container h3, #description-container h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#info-container ion-icon{
+    font-size: 20px;
+    color: #F2A340;
+    margin-right: 5px;
+}
+
+#info-container #event-submit{
+    margin: 20px 0;
+}
+
+#items-list{
+    list-style: none;
+    padding-left: 0;
+}
+
+#items-list li{
+    display: flex;
+}
+
+.msg{
+    background: #D4EDDA;
+    color: #155724;
+    border: 1px solid #C3E6CB;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 10px;
+}
+
+#description-container{
+    margin-top: 30px;
+}
+
+.dashboard-title-container{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.dashboard-events-container th{
+    width: 25%;
+}
+
+.dashboard-events-container form{
+    display: inline-block;
+}
+
+.img-preview{
+    width: 100px;
+    margin-top: 20px;
+}
+
+#info-container .already-join-msg{
+    margin: 15px 0;
+    color: #004085;
+    background: #CCE5FF;
+    border: 1px solid #B8DAFF;
+    padding: 10px;
+    width: 275px;
+}
+
+/*-----------Novo estilo---------------*/
+.page-item.active .page-link{
+    background-color: #F2A340;
+    border-color: #F2A340;
+}
+
+.page-link{
+    color: #000;
+}
+
+footer .desenvolvedor{
+    color: #F2A340;
+}
+
+footer .desenvolvedor:hover{
+    color: #ccc;
+}
